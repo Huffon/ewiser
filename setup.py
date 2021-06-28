@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='ewiser',
@@ -7,6 +7,7 @@ setup(
     url='',
     license='',
     author='Michele Bevilacqua',
+    packages=find_packages(include=["ewiser", "ewiser.*"]),
     author_email='bevilacqua@di.uniroma1.it',
     description='Enhanced WSD Integrating Synset Embeddings and Relations'
 )
